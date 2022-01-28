@@ -44,6 +44,10 @@ body{
 .current{
     background-color:#FF3399;
 }
+
+.green {
+    background-color: green;
+}
 #btnHolder{
     width:750px;
     text-align: center;
@@ -109,7 +113,7 @@ body{
         $("#data2").fadeOut(function(){
             $("#data1").fadeIn(200);
         })
-        $(this).addClass("current");
+        $(this).addClass("current green");
         $("#data1").addClass(".active");        
         console.log("data1");
         });
