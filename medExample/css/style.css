@@ -1,0 +1,61 @@
+    #title{
+        text-align: center;
+    }
+    .patientList   
+    {
+        height:500px;
+        padding:10px;
+        background-color:#FFF;
+        height:100%;
+    }
+    .patientList ul{
+        font-size: 16px;
+        font-weight: bold;
+    }
+    .rCol{
+        border-left:2px solid #000;
+    }
+    #patientTable tr td{
+        border-top:1px solid #333;
+    }
+    #patientTable tr td, #historyTable tr td{
+        padding-left:10px;
+    }
+    .patientInfo{
+        background-color:#aeecb8;
+        font-size: 16px;
+        font-weight: bold;
+    }
+    #historyTable thead{
+        color:#000;
+        font-weight:bold;
+    }
+    .medicalHist{
+        border-top:2px solid #000;
+        background-color:#8dc6d2;
+    }
+    .medicalHist h2, .patientInfo h2{
+        padding-left:10px;
+        color:#000
+    }
+    .medicalHist td, .patientInfo td{
+        color:#000;
+        font-weight: bold;
+        font-size:16px;
+    }
+    input[type="checkbox"] {
+      transform:scale(1.2, 1.2);
+    }
+    #submitBtn{
+        color:#333;
+        border:1px solid #333;
+        box-shadow:0px 2px 2px #333;
+    }
+    #submitBtn:hover, #submitBtn:active, #submitBtn:focus{
+        color:#000;
+        border:1px solid #000;
+        outline:none!important;
+    }
+    .main{
+        border:3px solid #000;
+    }

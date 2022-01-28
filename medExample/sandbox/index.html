@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="App">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Bare - Start Bootstrap Template</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+<script>document.write("<base href=\"" + document.location + "\" />");</script>
+    <!-- Angular -->
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.2/angular.js"></script>
+  <script src="app.js"></script>
+    <!-- Custom CSS -->
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body ng-controller="MainCtrl">
+
+    <!-- Page Content -->
+    <div class="container">
+
+        <div class="row">
+            <div class="col-lg-4 patientList">
+                <div class="content">
+                    <ul class="list-unstyled">
+                      <li ng-repeat="patient in patients">
+                        <a href="" ng-click="select(patient)">{{patient.Name}}</a>
+                      </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-lg-8">
+                <div class="row patientInfo">
+                    <div class="content">
+                    <div class="panel panel-default">
+                      <h2>MRN: {{selected.MRN}}</h2>
+                      <br />Scheduled Time: {{selected.ScheduleTime}}
+                      <br />DOB: {{selected.DOB}}
+                      <br />Gender: {{selected.Gender}}
+                    </div>
+
+                    </div>
+                </div>
+                <div class="row medicalHist">
+                    <div class="content">
+                    <h2>Medical History</h2>            
+                      <table class="table table-responsive">
+                        <thead>
+                          <tr>
+
+                            <th colspan="2"></th>
+                            <th class="text-center">No Problem</th>
+                            <th class="text-center">Medical Problem</th>
+                            <th class="text-center">Surgery</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>1:</td>
+                            <td>Eyes (cataracts, glaucoma)</td>
+                            <td class="text-center"><input type="checkbox" checked="{{selected.EyesNp}}"></td>
+                            <td class="text-center"><input type="checkbox" checked="{{selected.EyesMp}}"></td>
+                            <td class="text-center"><input type="checkbox" checked="{{selected.EyesS}}"></td>
+                          </tr>
+                          <tr>
+                            <td>2:</td>
+                            <td>Ears, nose, sinuses or tonsils</td>
+                            <td class="text-center"><input type="checkbox" checked="{{selected.NoseNp}}"></td>
+                            <td class="text-center"><input type="checkbox" checked="{{selected.NoseMp}}"></td>
+                            <td class="text-center"><input type="checkbox" checked="{{selected.NoseS}}"></td>
+                          </tr>
+                          <tr>
+                            <td>3:</td>
+                            <td>Thyroid or parathyroid glands</td>
+                            <td class="text-center"><input type="checkbox"/></td>
+                            <td class="text-center"><input type="checkbox"/></td>
+                            <td class="text-center"><input type="checkbox"/></td>
+                          </tr>
+                          <tr>
+                            <td>4:</td>
+                            <td>Heart valves or abnormal heart rhythm</td>
+                            <td class="text-center"><input type="checkbox"/></td>
+                            <td class="text-center"><input type="checkbox"/></td>
+                            <td class="text-center"><input type="checkbox"/></td>
+                          </tr>
+                          <tr>
+                            <td>5:</td>
+                            <td>Coronory (heart) arteries (angina)</td>
+                            <td class="text-center"><input type="checkbox"/></td>
+                            <td class="text-center"><input type="checkbox"/></td>
+                            <td class="text-center"><input type="checkbox"/></td>
+                          </tr>
+                          <tr>
+                            <td>6:</td>
+                            <td>Arteries (aorta, arteries to head, arms, legs)</td>
+                            <td class="text-center"><input type="checkbox"/></td>
+                            <td class="text-center"><input type="checkbox"/></td>
+                            <td class="text-center"><input type="checkbox"/></td>
+                          </tr>
+                          <tr>
+                            <td colspan="6"><input type="submit" value="Submit" class="pull-right submit"></td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!-- /.row -->
+
+    </div>
+    <!-- /.container -->
+
+    <!-- jQuery Version 1.11.1 -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+</body>
+
+</html>

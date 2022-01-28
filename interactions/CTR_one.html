@@ -1,0 +1,97 @@
+<html>
+<head>
+<!-- jQuery Version 1.11.1 -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+<style>
+body{
+    width:1024px;
+    margin:0 auto;
+    background:#CCC;
+    border:5px solid #333;
+    height:800px;
+}
+.box{
+    ;
+}
+.hide{
+    display:none;
+}
+#button1, #button2, #button3{
+    width:100px;
+    border:2px solid #000;
+    background-color: #FFF;
+    position:absolute;
+    top:100px;
+    left:600px;
+    margin-top:30px;
+    text-align: center;
+    padding-top:5px;
+    cursor:pointer;
+}
+
+
+#data1, #data2, #data3{
+    position: absolute;
+    right: 600;
+    width: 500px;
+    top: 50px;
+    border: 2px solid #efefef;
+    padding: 20px;
+}
+#data1, #button1{
+    top:50px;
+}
+#data2, #button2{
+    top:300px;
+}
+#data3, #button3{
+    top:550px;
+}
+</style>
+</head>
+<body>
+
+<div class="box">
+    <div id="data1" class="hide">
+    <h1>This is data 1</h1>
+    Try-hard poutine leggings drinking vinegar 8-bit fashion axe, vegan austin everyday carry whatever wayfarers celiac disrupt scenester. Tofu mlkshk cardigan, YOLO meggings tousled marfa craft beer slow-carb. Twee forage aesthetic put a bird on it, pork belly meggings heirloom viral freegan four loko franzen hella beard.
+    </div>
+
+    <div id="data2" class="hide">
+    <h1>This is data 2</h1>
+     Drinking vinegar dreamcatcher YOLO austin. Try-hard poutine leggings drinking vinegar 8-bit fashion axe, vegan austin everyday carry whatever wayfarers celiac disrupt scenester. Tofu mlkshk cardigan, YOLO meggings tousled marfa craft beer slow-carb. Twee forage aesthetic put a bird on it, pork belly meggings heirloom viral freegan four loko franzen hella beard.
+    </div>
+
+    <div id="data3" class="hide">
+    <h1>This is data 3</h1>
+    8-bit salvia cornhole try-hard blog, you probably haven't heard of them hella kombucha. YOLO intelligentsia four loko bespoke, polaroid drinking vinegar portland gluten-free street art. Fixie wayfarers DIY, tote bag quinoa man braid bushwick 8-bit selfies try-hard brooklyn microdosing beard cray. Drinking vinegar dreamcatcher.
+    </div>
+</div>
+
+
+    <div id="button1">BUTTON 1</div>
+    <div id="button2">BUTTON 2</div>
+    <div id="button3">BUTTON 3</div>
+
+<script>/// CTR many to one
+    $("#button1").click(function(){
+        $("#data1").fadeIn(200);
+        
+        console.log("data1");
+    });
+
+    $("#button2").click(function(){
+        $("#data2").fadeIn(200);
+        
+        console.log("data2");
+    });
+
+    $("#button3").click(function(){
+        $("#data3").fadeIn(200);
+        
+        console.log("data3");
+    });
+
+</script>
+</body>
+</html>

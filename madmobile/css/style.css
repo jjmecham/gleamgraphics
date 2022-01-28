@@ -1,0 +1,378 @@
+/*  CSS  */
+
+@media only screen and (max-width : 2048px) {
+	body{
+		width:1024px;
+		height:100%;
+		margin:0 auto;
+		}
+	#wrapper{
+		width:100%;
+		height:100%;
+		background-color:#f0f0f0;
+	}
+	form{
+		float:right;
+	}
+	header{
+		background:#ffffff;
+		border-bottom:2px solid #dfdfdf;
+		padding-top:30px;
+	}
+
+	nav{
+		height:50px;
+		vertical-align:middle;
+		margin-bottom:30px;
+	}
+
+	#logo{
+		margin-left:30px;
+		margin-top:-10px;
+		width:127px;
+	}
+	nav ul{
+	    list-style-type: none;
+	    margin: 6px 60px 0px 0px;
+	    padding: 0;
+	}
+
+	nav li {
+	    display: inline;
+	}
+	nav li a{
+		text-decoration: none;
+		color:#666;
+		font-weight:bold;
+		font-size:14px;
+		margin-left:30px;
+	}
+	nav li a:hover{
+		color:#333;
+	}
+	#toptab{
+		display:block;
+		background-color:#73838F;
+		position:fixed;
+		top:50%;
+		right:0px;
+		vertical-align: middle;
+		padding:10px 10px;
+		text-decoration: none;
+		color:#ffffff;
+		border:2px solid #cccccc;
+		border-radius:5px;
+		opacity:.70;
+	}
+	#toptab:hover{
+		opacity:1.0;
+	}
+	div#ddmenu{
+		display:none;
+		height:66px;
+		background-color: #5f6c76;
+		width:1024px;
+		position:absolute;
+		z-index: 999;
+	}
+	div#ddmenu ul{
+		width:665px;
+		margin:0 auto;
+		line-height: 66px;
+		vertical-align: middle;
+		text-align: justify;
+	}
+	div#ddmenu ul li{
+		display:inline-block;
+	}
+	div#ddmenu ul:after{
+	  content: '';
+	  width: 100%;
+	  display: inline-block;
+	}
+	div#ddmenu a{
+		color:#ffffff;
+		text-decoration:none;
+		font-size:12px;
+	}
+	div#ddmenu a:hover{
+		color:#333;
+	}
+	.products{
+		margin:15px 15px 0px;
+	}
+	.product{
+		width:164px;
+		border:2px solid #dfdfdf;
+		margin:15px;
+		background:#ffffff;
+	}
+	.product img{
+		width:115px;
+		margin:25px;
+	}
+	.product p{
+		text-align: left;
+		padding:0 10px;
+		margin-top:0px;
+		color:#666;
+		font-size:18px;
+		font-weight:bolder;
+	}
+	.newprice{
+		color:#f00;
+		font-size:20px;
+		font-weight:bold;
+	}
+	.oldprice{
+		text-decoration: line-through;
+		color:#666;
+		font-weight:bold;
+	}
+	.fright{
+		float:right;
+	}
+	.fleft{
+		float:left;
+	}
+	.clear{
+		clear:both;
+	}
+	.add {
+	  background: #fe8c37;
+	  background-image: -webkit-linear-gradient(top, #fe8c37, #f66900);
+	  background-image: -moz-linear-gradient(top, #fe8c37, #f66900);
+	  background-image: -ms-linear-gradient(top, #fe8c37, #f66900);
+	  background-image: -o-linear-gradient(top, #fe8c37, #f66900);
+	  background-image: linear-gradient(to bottom, #fe8c37, #f66900);
+	  -webkit-border-radius: 4;
+	  -moz-border-radius: 4;
+	  border-radius: 4px;
+	  font-family: Arial;
+	  color: #ffffff;
+	  font-size: 12px;
+	  padding: 5px;
+	  border-top: solid #fe8c37 2px;
+	  border-bottom: solid #f66900 2px;
+	  border-right: solid #fe8c37 2px;
+	  border-left: solid #fe8c37 2px;
+	  text-decoration: none;
+	  width:135px;
+	  height:35px;
+	  margin:15px;
+	}
+
+	.add:hover {
+	  background: #f66900;
+	  background-image: -webkit-linear-gradient(top, #f66900, #fe8c37);
+	  background-image: -moz-linear-gradient(top, #f66900, #fe8c37);
+	  background-image: -ms-linear-gradient(top, #f66900, #fe8c37);
+	  background-image: -o-linear-gradient(top, #f66900, #fe8c37);
+	  background-image: linear-gradient(to bottom, #f66900, #fe8c37);
+	  text-decoration: none;
+	}
+
+	.search:hover{
+		background-color:#73838f;
+	}
+	.search {
+		margin: 1px 0px 0px;
+		padding: 5px 7px;
+		font-size:14px;
+		font-weight:bold;
+		outline: none;
+		cursor: pointer;
+		text-align: center;
+		text-decoration: none;
+		color: #ffffff;
+		border: solid 2px #dfdfdf;
+		background-color: #5f6c76;
+		width:75px;
+		height:28px;
+	}
+	form{
+		margin-right:50px;
+		width:530px;
+	}
+	form input{
+		line-height: normal;
+		float: left;
+		height: 22px;
+		margin-top: 1px;
+		margin-right:-2px;
+		width:450px;
+		background-color:#f0f0f0;
+		border:2px solid #dfdfdf;
+	}
+	form input[value]{
+		color:#CCC;
+	}
+	.more{
+		padding:20px 0px;
+		background-color:#f0f0f0;
+		border-bottom:2px solid #dfdfdf;
+	}
+	.more button{
+		padding: 5px 7px;
+		font-size:14px;
+		font-weight:bold;
+		outline: none;
+		cursor: pointer;
+		text-align: center;
+		text-decoration: none;
+		color: #ffffff;
+		border: solid 2px #8293a0;
+		background-color: #5f6c76;
+		border-radius:5px;
+		width:136px;
+		height:40px;
+		margin-left:50px;
+	}
+	.more button:hover{
+		background-color:#697782;
+	}
+	footer{
+		text-align: center;
+		color:#666;
+		font-size: 12px;
+	}
+	footer a{
+		color:#fe8c37;
+		text-decoration: none;
+	}
+
+}
+
+@media only screen and (max-width: 1024px) and (min-width: 800px) {
+    body {
+        width:824px;
+        height:1022px;
+    }
+    #wrapper{
+    	height:1260px;
+    	overflow:hidden;
+    }
+    .more{
+    	text-align: center;
+    }
+    .more button{
+    	margin-left:0px;
+    }
+    form{
+    	width:400px;
+    	margin-right:0px;
+    	float:right;
+    }
+    form input{
+    	width:300px;
+    }
+    div#ddmenu{
+    	width:824px;
+    }
+/*    div#ddmenu ul{
+    	line-height: 30px;
+    	padding:0;
+    	width:100%;
+    }*/
+
+}
+
+@media only screen and (max-width: 800px) and (min-width: 600px) {
+    body {
+        width:625px;
+        height:1022px;
+    }
+    #wrapper{
+    	height:1260px;
+    	overflow:hidden;
+    }
+    .more{
+    	text-align: center;
+    }
+    .more button{
+    	margin-left:0px;
+    }
+    form{
+    	margin-right: 0px;
+    	width: 561px;
+    	float: left;
+    	margin-left: 32px;
+    }
+    form input{
+    	width:484px;
+    }
+    div#ddmenu{
+    	height:auto;
+    	width:625px;
+    }
+    div#ddmenu ul{
+    	line-height: 30px;
+    	padding:0;
+    	width:100%;
+    }
+    div#ddmenu ul li{
+    	display:block;
+    	text-align: center;
+    	border-bottom:1px solid #dfdfdf;
+    }
+    div#ddmenu > a{
+    	font-size:24px;
+    }
+    div#ddmenu ul:after{
+    	display:block;
+    	content:none;
+    }
+    div#ddmenu ul li:last-of-type{
+    	border-bottom:none;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+        width:426px;
+        height:1022px;
+    }
+    #wrapper{
+    	height:1260px;
+    	overflow:hidden;
+    }
+    .more{
+    	text-align: center;
+    }
+    .more button{
+    	margin-left:0px;
+    }
+    form{
+		 margin-right: 0px;
+		 width: 370px;
+		 float: left;
+		 margin-left: 32px;
+    }
+    form input{
+    	width:286px;
+    }
+    div#ddmenu{
+    	height:auto;
+    	width:426px;
+    }
+    div#ddmenu ul{
+    	line-height: 30px;
+    	padding:0;
+    	width:100%;
+    }
+    div#ddmenu ul:after{
+    	display:block;
+    	content:none;
+    }
+    div#ddmenu ul li:last-of-type{
+    	border-bottom:none;
+    }
+    div#ddmenu ul li{
+    	display:block;
+    	text-align: center;
+    	border-bottom:1px solid #dfdfdf;
+    }
+    div#ddmenu > a{
+    	font-size:24px;
+    }
+}

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="App">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Bare - Start Bootstrap Template</title>
+    <!-- Custom CSS -->
+    <link href="css/style.css" rel="stylesheet">
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+<script>document.write("<base href=\"" + document.location + "\" />");</script>
+    <!-- Angular -->
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.2/angular.js"></script>
+<script src="app.js"></script>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body ng-controller="MainCtrl">
+<div class="container">
+<div class="row">
+<h2 id="title">This is an AngularJS example using JSON data in a seperate file</h2>
+</div>
+</div>
+    <!-- Page Content -->
+    <div class="main container">
+        <div class="row">
+            <div class="col-lg-4 patientList">
+                <div class="content">
+                <h2>Patient List</h2>
+                <h5>(select one)</h5>
+                    <ul class="list-unstyled ">
+                      <li ng-repeat="patient in patients">
+                        <a href="" ng-click="select(patient)">{{patient.Name}}</a>
+                      </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-lg-8 rCol">
+                <div class="row patientInfo">
+                    <div class="content">
+                      <h2>Patient Information - {{selected.Name}}</h2>
+                      <table id="patientTable" class="table table-responsive">
+                      <tr>
+                      <td>MRN:</td><td>{{selected.MRN}}</td>
+                      </tr>
+                      <tr>
+                      <td>Scheduled Time:</td><td>{{selected.ScheduleTime}}</td>
+                      </tr>
+                      <tr>
+                      <td>DOB:</td><td>{{selected.DOB}}</td>
+                      </tr>
+                      <tr>
+                      <td>Gender:</td><td>{{selected.Gender}}</td>
+                      </tr>
+                      </table>
+                    </div>
+                </div>
+                <div class="row medicalHist">
+                    <div class="content">
+                    <h2>Medical History</h2>            
+                      <table id="historyTable" class="table table-responsive">
+                        <thead>
+                          <tr>
+                            <th colspan="2"></th>
+                            <th class="text-center">No Problem</th>
+                            <th class="text-center">Medical Problem</th>
+                            <th class="text-center">Surgery</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>1:</td>
+                            <td>Eyes (cataracts, glaucoma)</td>
+                            <td class="text-center"><input type="checkbox" checked="{{selected.EyesNp}}"></td>
+                            <td class="text-center"><input type="checkbox" checked="{{selected.EyesMp}}"></td>
+                            <td class="text-center"><input type="checkbox" checked="{{selected.EyesS}}"></td>
+                          </tr>
+                          <tr>
+                            <td>2:</td>
+                            <td>Ears, nose, sinuses or tonsils</td>
+                            <td class="text-center"><input type="checkbox" checked="{{selected.NoseNp}}"></td>
+                            <td class="text-center"><input type="checkbox" checked="{{selected.NoseMp}}"></td>
+                            <td class="text-center"><input type="checkbox" checked="{{selected.NoseS}}"></td>
+                          </tr>
+                          <tr>
+                            <td>3:</td>
+                            <td>Thyroid or parathyroid glands</td>
+                            <td class="text-center"><input type="checkbox" checked="{{selected.ThyroidNp}}"></td>
+                            <td class="text-center"><input type="checkbox" checked="{{selected.ThyroidMp}}"></td>
+                            <td class="text-center"><input type="checkbox" checked="{{selected.ThyroidS}}"></td>
+                          </tr>
+                          <tr>
+                            <td>4:</td>
+                            <td>Heart valves or abnormal heart rhythm</td>
+                            <td class="text-center"><input type="checkbox" checked="{{selected.HeartNp}}"></td>
+                            <td class="text-center"><input type="checkbox" checked="{{selected.HeartMp}}"></td>
+                            <td class="text-center"><input type="checkbox" checked="{{selected.HeartS}}"></td>
+                          </tr>
+                          <tr>
+                            <td>5:</td>
+                            <td>Coronory (heart) arteries (angina)</td>
+                            <td class="text-center"><input type="checkbox" checked="{{selected.CoronoryNp}}"></td>
+                            <td class="text-center"><input type="checkbox" checked="{{selected.CoronoryMp}}"></td>
+                            <td class="text-center"><input type="checkbox" checked="{{selected.CoronoryS}}"></td>
+                          </tr>
+                          <tr>
+                            <td>6:</td>
+                            <td>Arteries (aorta, arteries to head, arms, legs)</td>
+                            <td class="text-center"><input type="checkbox" checked="{{selected.ArteriesNp}}"></td>
+                            <td class="text-center"><input type="checkbox" checked="{{selected.ArteriesMp}}"></td>
+                            <td class="text-center"><input type="checkbox" checked="{{selected.ArteriesS}}"></td>
+                          </tr>
+                          <tr>
+                            <td colspan="6"><input id="submitBtn" type="submit" value="Submit" class="pull-right submit" ng-click="doGreeting(greeting)"></td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!-- /.row -->
+
+    </div>
+    <!-- /.container -->
+
+    <!-- jQuery Version 1.11.1 -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- JavaScript -->
+    <script>
+      document
+    </script>
+
+</body>
+
+</html>

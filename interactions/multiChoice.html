@@ -1,0 +1,142 @@
+<html>
+<head>
+<!-- jQuery Version 1.11.1 -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+<style>
+body{
+    width:1024px;
+    margin:0 auto;
+    background:#CCC;
+    border:5px solid #333;
+    height:800px;
+}
+.box{
+    width:100%;
+    height:100%;
+}
+.hide{
+    display:none;
+}
+.button1, .button2, .button3{
+    width: 100px;
+    border: 2px solid #000;
+    background-color: #FFF;
+    margin-top: 30px;
+    text-align: center;
+    padding-top: 5px;
+    cursor: pointer;
+    display: inline-block;
+    margin: 0 50px;
+}
+
+#dataBox{
+    width: 750px;
+    height:200px;
+    top: 200px;
+    position: relative;
+    border: 2px solid #efefef;
+    padding: 20px;
+    margin: 0 auto;
+}
+#data1, #data2, #data3{
+
+}
+.current{
+    background-color:#FF3399;
+}
+#btnHolder{
+    width:750px;
+    text-align: center;
+    position:relative;
+    top:150px;
+    left:137px;
+}
+#questionBox{
+    width: 750px;
+    border: 4px solid #333;
+    position: relative;
+    top: 50px;
+    margin: 0 auto;
+    padding: 20px;
+}
+#questionBox h1{
+    text-align: center;
+    font-size: 40px;
+}
+#textQuestion{
+    background-color: #FFF;
+    font-size: 20px;
+    padding:20px;
+}
+</style>
+</head>
+<body>
+
+<div class="box">
+<div id="questionBox">
+    <h1>This is a Question</h1>
+    <div id="textQuestion">
+    Fixie wayfarers DIY, tote bag quinoa man braid bushwick 8-bit selfies try-hard brooklyn microdosing beard cray. Drinking vinegar dreamcatcher YOLO austin. Try-hard poutine leggings drinking vinegar 8-bit fashion axe, vegan austin everyday carry whatever wayfarers celiac disrupt scenester. Tofu mlkshk cardigan, YOLO meggings tousled marfa craft beer slow-carb.
+    </div>
+</div>
+
+<div id="btnHolder">
+    <div class="button1">ANSWER 1</div>
+    <div class="button2">ANSWER 2</div>
+    <div class="button3">ANSWER 3</div>
+</div>
+<div id="dataBox">
+    <div id="data1" class="hide">
+    <h1>Correct - Feedback</h1>
+    8-bit salvia cornhole try-hard blog, you probably haven't heard of them hella kombucha. YOLO intelligentsia four loko bespoke, polaroid drinking vinegar portland gluten-free street art. Fixie wayfarers DIY, tote bag quinoa man braid bushwick 8-bit selfies try-hard brooklyn microdosing beard cray. Drinking vinegar dreamcatcher YOLO austin. Try-hard poutine leggings drinking vinegar 8-bit fashion axe, vegan austin everyday carry whatever wayfarers celiac disrupt scenester. Tofu mlkshk cardigan, YOLO meggings tousled marfa craft beer slow-carb. Twee forage aesthetic put a bird on it, pork belly meggings heirloom viral freegan four loko franzen hella beard.
+    </div>
+
+    <div id="data2" class="hide">
+    <h1>Incorrect - Feedback</h1>
+    8-bit salvia cornhole try-hard blog, you probably haven't heard of them hella kombucha. YOLO intelligentsia four loko bespoke, polaroid drinking vinegar portland gluten-free street art. Fixie wayfarers DIY, tote bag quinoa man braid bushwick 8-bit selfies try-hard brooklyn microdosing beard cray. Drinking vinegar dreamcatcher YOLO austin. Try-hard poutine leggings drinking vinegar 8-bit fashion axe, vegan austin everyday carry whatever wayfarers celiac disrupt scenester. Tofu mlkshk cardigan, YOLO meggings tousled marfa craft beer slow-carb. Twee forage aesthetic put a bird on it, pork belly meggings heirloom viral freegan four loko franzen hella beard.
+    </div>
+
+    <div id="data3" class="hide">
+    <h1>Incorrect - Feedback 2</h1>
+    8-bit salvia cornhole try-hard blog, you probably haven't heard of them hella kombucha. YOLO intelligentsia four loko bespoke, polaroid drinking vinegar portland gluten-free street art. Fixie wayfarers DIY, tote bag quinoa man braid bushwick 8-bit selfies try-hard brooklyn microdosing beard cray. Drinking vinegar dreamcatcher YOLO austin. Try-hard poutine leggings drinking vinegar 8-bit fashion axe, vegan austin everyday carry whatever wayfarers celiac disrupt scenester. Tofu mlkshk cardigan, YOLO meggings tousled marfa craft beer slow-carb. Twee forage aesthetic put a bird on it, pork belly meggings heirloom viral freegan four loko franzen hella beard.
+    </div>
+</div>
+</div>
+
+<script>/// CTR many to one
+    $(".button1").click(function(){
+        $(".current").removeClass("current");
+        $("#data2").fadeOut(function(){
+            $("#data1").fadeIn(200);
+        })
+        $(this).addClass("current");
+        $("#data1").addClass(".active");        
+        console.log("data1");
+        });
+        
+
+    $(".button2").click(function(){
+        $(".current").removeClass("current");
+        $("#data1").fadeOut(function(){
+            $("#data2").fadeIn(200);
+        })
+        $(this).addClass("current");
+        $("#data2").addClass(".active");        
+        console.log("data2");
+        });
+        
+
+    $(".button3").click(function(){
+        $(".current").removeClass("current");
+        $("#data2").fadeOut(function(){
+            $("#data2").fadeIn(200);
+        })
+        $(this).addClass("current");
+        $("#data2").addClass(".active");        
+        console.log("data2");
+        });
+        
+
+</script>
+</body>
+</html>
