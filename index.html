@@ -22,12 +22,11 @@
 
     <title>Jeremy Mecham Dot Com</title>
 
-    <link rel='shortcut icon' href='http://jeremymecham.com/favicon.png' type='image/png'>
+    <link rel='shortcut icon' href='http://gleamgraphics.com/favicon.png' type='image/png'>
 
     <!-- Bootstrap Core CSS -->
 
     <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
-
 
 
     <!-- Custom Fonts -->
@@ -79,7 +78,10 @@
 <style>
 
  /* centered columns styles */
-
+.box {
+    visibility: hidden;
+    }
+    
 .row-centered {
 
     text-align:center;
@@ -420,7 +422,7 @@
 
 <div class="row no-gutter row-centered">
 
-    <div class="col-lg-3 col-md-3 col-centered">
+    <div class="col-lg-3 col-md-3 col-centered box">
 
         <a href="img/portfolio/1.jpg" class="portfolio-box">
 
@@ -450,7 +452,7 @@
 
     </div>
 
-    <div class="col-lg-3 col-md-3 col-centered">
+    <div class="col-lg-3 col-md-3 col-centered box">
 
         <a href="img/portfolio/2.jpg" class="portfolio-box">
 
@@ -480,7 +482,7 @@
 
     </div>
 
-    <div class="col-lg-3 col-md-3 col-centered">
+    <div class="col-lg-3 col-md-3 col-centered box">
 
         <a href="img/portfolio/sat_complayout3.jpg" class="portfolio-box" title="Click Toggle Enlarge">
 
@@ -510,7 +512,7 @@
 
     </div>
 
-    <div class="col-lg-3 col-md-3 col-centered">
+    <div class="col-lg-3 col-md-3 col-centered box">
 
         <a href="img/portfolio/14.jpg" class="portfolio-box">
 
@@ -540,7 +542,7 @@
 
     </div>
 
-     <div class="col-lg-3 col-md-3 col-centered">
+     <div class="col-lg-3 col-md-3 col-centered box">
 
     <a href="img/portfolio/sat_complayout4.jpg" class="portfolio-box" title="Click Toggle Enlarge">
 
@@ -570,7 +572,7 @@
 
 </div>
 
-    <div class="col-lg-3 col-md-3 col-centered">
+    <div class="col-lg-3 col-md-3 col-centered box">
 
         <a href="img/portfolio/27.jpg" class="portfolio-box">
 
@@ -600,7 +602,7 @@
 
     </div>
 
-    <div class="col-lg-3 col-md-3 col-centered">
+    <div class="col-lg-3 col-md-3 col-centered box">
 
         <a href="img/portfolio/18.jpg" class="portfolio-box">
 
@@ -630,7 +632,7 @@
 
     </div>
 
-    <div class="col-lg-3 col-md-3 col-centered">
+    <div class="col-lg-3 col-md-3 col-centered box">
 
         <a href="img/portfolio/BusinessObserver_HP.jpg" class="portfolio-box" title="Click Toggle Enlarge">
 
@@ -660,7 +662,7 @@
 
     </div>
 
-    <div class="col-lg-3 col-md-3 col-centered">
+    <div class="col-lg-3 col-md-3 col-centered box">
 
         <a href="img/portfolio/10.jpg" class="portfolio-box" title="">
 
@@ -690,7 +692,7 @@
 
     </div>
 
-    <div class="col-lg-3 col-md-3 col-centered">
+    <div class="col-lg-3 col-md-3 col-centered box">
 
         <a href="img/portfolio/15.jpg" class="portfolio-box" title="">
 
@@ -720,7 +722,7 @@
 
     </div>
 
-    <div class="col-lg-3 col-md-3 col-centered">
+    <div class="col-lg-3 col-md-3 col-centered box">
 
         <a href="img/portfolio/7.jpg" class="portfolio-box" title="">
 
@@ -750,7 +752,7 @@
 
     </div>
 
-    <div class="col-lg-3 col-md-3 col-centered">
+    <div class="col-lg-3 col-md-3 col-centered box">
 
         <a href="img/portfolio/8.jpg" class="portfolio-box" title="">
 
@@ -975,7 +977,7 @@
     <script src="js/magnific.js"></script>
 
 
-
+   
     <script>
 
     // This will create a single gallery from all elements that have class "gallery-item"
@@ -1042,6 +1044,19 @@ function googleTranslateElementInit() {
 
 </script><script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 
+    
+<!-- Greensock -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+
+<script>
+    function init(){
+    gsap.from(".box", {duration: 1, opacity: 0, y: 150, stagger: 0.25, autoAlpha: 0});
+    }
+
+    window.addEventListener("load", function(event){
+        init();
+    });
+</script>
 </body>
 
 
