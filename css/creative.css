@@ -227,7 +227,7 @@ header .header-content .header-content-inner p {
   color:#fffff0;
 }
 
-#contact .fa {
+#contact .fa-phone, #contact .fa-2x {
   color:#000;
 }
 @media (min-width: 768px) {
