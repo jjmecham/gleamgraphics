@@ -229,6 +229,7 @@ header .header-content .header-content-inner p {
   text-align: center;
   background-attachment: fixed;
   color:#fffff0;
+  background-color:rgba(255, 255, 240, 0.7);
 }
 
 #contact a{
