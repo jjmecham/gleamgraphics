@@ -228,11 +228,11 @@ header .header-content .header-content-inner p {
   background-repeat: no-repeat;
   text-align: center;
   background-attachment: fixed;
-  color:#fffff0;
+  color:#333;
 }
 
 #contact a{
-  color:#fffff0;
+  color:#333;
 }
 #contact .fa-phone, #contact .fa-envelope-o, #contact .fa-2x {
   color:#000;
