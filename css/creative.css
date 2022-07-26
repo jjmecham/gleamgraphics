@@ -231,6 +231,9 @@ header .header-content .header-content-inner p {
   color:#fffff0;
 }
 
+#contact a{
+  color:#fffff0;
+}
 #contact .fa-phone, #contact .fa-envelope-o, #contact .fa-2x {
   color:#000;
 }
