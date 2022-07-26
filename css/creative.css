@@ -226,6 +226,10 @@ header .header-content .header-content-inner p {
   background-attachment: fixed;
   color:#fffff0;
 }
+
+#contact .fa, #contact a{
+  color:#000;
+}
 @media (min-width: 768px) {
   header {
     min-height: 100%;
