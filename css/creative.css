@@ -12,7 +12,7 @@ hr {
   max-width: 50px;
 }
 hr.light {
-  border-color: ##;
+  border-color: #FFF;
 }
 a {
   -webkit-transition: all 0.35s;
@@ -50,7 +50,7 @@ p {
   color: #FFF;
 }
 .text-faded {
-  color: rgba(255, 255, 240, 0.7);
+  color: rgba(255, 255, 255, 0.7);
 }
 section {
   padding: 100px 0;
@@ -134,11 +134,11 @@ aside {
   }
   .navbar-default .nav > li > a,
   .navbar-default .nav > li > a:focus {
-    color: rgba(255, 255, 240, 1.0);
+    color: rgba(255, 255, 255, 1.0);
   }
   .navbar-default .nav > li > a:hover,
   .navbar-default .nav > li > a:focus:hover {
-    color: #ffffff;
+    color: #000;
   }
   .navbar-default.affix {
     background-color: #FFF;
