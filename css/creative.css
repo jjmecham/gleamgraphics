@@ -442,7 +442,7 @@ fieldset[disabled] .btn-primary.active {
 .btn {
   font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
   /* border: none; */
-  border-radius: 150px;
+  border-radius: none;
   font-weight: 700;
   text-transform: uppercase;
 }
