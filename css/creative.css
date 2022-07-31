@@ -346,7 +346,7 @@ header .header-content .header-content-inner p {
 .btn-default {
   color: #FFF;
   background-color: #523844;
-  border: 2px solid #fff;
+  border: 1px solid #fff;
   -webkit-transition: all 0.35s;
   -moz-transition: all 0.35s;
   transition: all 0.35s;
@@ -359,7 +359,7 @@ header .header-content .header-content-inner p {
 .open > .dropdown-toggle.btn-default {
   color: #000000;
   background-color: #FFF;
-  border: 2px solid black;
+  border: 1px solid black;
 }
 .btn-default:active,
 .btn-default.active,
@@ -441,8 +441,8 @@ fieldset[disabled] .btn-primary.active {
 }
 .btn {
   font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
-  border: none;
-  border-radius: 300px;
+  /* border: none; */
+  border-radius: 200px;
   font-weight: 700;
   text-transform: uppercase;
 }
