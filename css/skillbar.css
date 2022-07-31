@@ -5,7 +5,7 @@
 	/*margin-bottom:15px;*/
 	width:100%;
 	background:#eee;
-	height:35px;
+	height:20px;
 	border-radius:3px;
 	-moz-border-radius:3px;
 	-webkit-border-radius:3px;
@@ -42,7 +42,7 @@
 	display:block;
 	background:rgba(0, 0, 0, 0.1);
 	padding:0 20px;
-	heigh20pxpx;
+	height: 20px;
 	line-height:20px;
 	-webkit-border-top-left-radius:3px;
 	-webkit-border-bottom-left-radius:3px;
