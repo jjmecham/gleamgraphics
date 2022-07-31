@@ -336,7 +336,8 @@ header .header-content .header-content-inner p {
   margin: 0 auto 20px;
 }
 .text-primary {
-  color: #D4644E;
+  /* color: #D4644E; */
+  color: #000;
 }
 .no-gutter > [class*='col-'] {
   padding-right: 0;
