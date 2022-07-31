@@ -344,9 +344,9 @@ header .header-content .header-content-inner p {
   padding-left: 0;
 }
 .btn-default {
-  color: #000000;
+  color: #FFF;
   background-color: #523844;
-  border-color: #fffff0;
+  border-color: ##000;
   -webkit-transition: all 0.35s;
   -moz-transition: all 0.35s;
   transition: all 0.35s;
@@ -359,7 +359,7 @@ header .header-content .header-content-inner p {
 .open > .dropdown-toggle.btn-default {
   color: #000000;
   background-color: #FFF;
-  border-color: #333;
+  border: 2px solid black;
 }
 .btn-default:active,
 .btn-default.active,
