@@ -57,16 +57,16 @@ myapp.controller('carousel', function($scope){
       $scope.myInterval = 3000;
       $scope.slides = [
         {
-          image: 'http://lorempixel.com/400/200/'
+          image: 'https://lorempixel.com/400/200/'
         },
         {
-          image: 'http://lorempixel.com/400/200/food'
+          image: 'https://lorempixel.com/400/200/food'
         },
         {
-          image: 'http://lorempixel.com/400/200/sports'
+          image: 'https://lorempixel.com/400/200/sports'
         },
         {
-          image: 'http://lorempixel.com/400/200/people'
+          image: 'https://lorempixel.com/400/200/people'
         }
       ];
 });
