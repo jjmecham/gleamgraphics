@@ -478,3 +478,9 @@ body {
   bottom: 50px;
   left: 10px;
 }
+
+.danuts{
+  /* border: 1px solid red; */
+  width: 25%;
+  padding: 20px;
+}
